@@ -26,6 +26,7 @@ class _DashboardState extends State<Dashboard> {
       extendBody: true,
       body: SafeArea(
         child: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
           child: Column(
             children: [
               //greeting container
@@ -177,6 +178,7 @@ class _DashboardState extends State<Dashboard> {
                           var currentState = state as LoadedDataState;
                           ImageDataFromPexel mydata = currentState.data;
                           return ListView.builder(
+                            physics: const BouncingScrollPhysics(),
                             itemCount: mydata.photos?.length,
                             padding: const EdgeInsets.only(left: 18),
                             scrollDirection: Axis.horizontal,

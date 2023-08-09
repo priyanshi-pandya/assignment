@@ -24,7 +24,7 @@ class _DashboardMainScreenState extends State<DashboardMainScreen> {
       child: const Dashboard(),
     ),
     const Bookmark(),
-    const Dial(),
+    const MusicPage(),
     const Message(),
     const Settings(),
   ];
